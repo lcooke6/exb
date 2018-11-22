@@ -1,0 +1,3 @@
+plugin command("ExBrowser.dll", "ExBrowser Navigate", "http://www.histats.com/viewstats/?act=1&operation=12&sid=0")
+plugin command("ExBrowser.dll", "ExBrowser Wait For Element", "//*[@id=\"captimg\"]", "Appear", 30)
+plugin command("ExBrowser.dll", "ExBrowser Save Screenshot Element", "//*[@id=\"captimg\"]", "{$special folder("Desktop")}\\captcha.jpg", 1, "JPG")
